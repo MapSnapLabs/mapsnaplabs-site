@@ -1,1 +1,0 @@
-console.log('✅ MapSnaps landing page loaded successfully');
