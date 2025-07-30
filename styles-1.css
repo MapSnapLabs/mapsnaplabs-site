@@ -1,26 +1,109 @@
+/* 🌍 General Reset */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
-header {
-  background: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
+
+/* 🌍 Header */
+.header {
+    background: white;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
 }
-h1 {
-  margin: 0;
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E90FF;
 }
-.intro {
-  padding: 20px;
-  max-width: 600px;
-  margin: auto;
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 📱 Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background: #fff;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.cta-btn {
+    background: #1E90FF;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.hero-image img {
+    width: 300px;
+}
+
+/* 🌟 Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10%;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.feature-item {
+    width: 30%;
+}
+
+/* 🎯 Kickstarter Section */
+.kickstarter {
+    padding: 50px 10%;
+    text-align: center;
+    background: #e8f4ff;
+}
+
+.kickstarter h2 {
+    font-size: 30px;
+}
+
+/* 📬 Footer */
 footer {
-  text-align: center;
-  padding: 10px;
-  font-size: 0.9em;
-  color: #777;
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
 }
