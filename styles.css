@@ -1,169 +1,82 @@
-/* MAPSNAPS WEBSITE STYLING */
-
-/* Global Styles */
+/* ========== GLOBAL STYLES ========== */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f7f8fa;
+  color: #222;
+  line-height: 1.6;
 }
 
+/* Centering and layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headings */
 h1, h2, h3 {
-    font-weight: 700;
-    margin-bottom: 10px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
 }
 
+/* Paragraph text */
 p {
-    margin: 0 0 15px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
 }
 
+/* ========== IMAGE STYLING ========== */
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;          /* keep images responsive */
+  min-width: 350px;         /* ✅ ensures images aren’t too tiny */
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;      /* ✅ slightly rounded corners for a modern feel */
 }
 
+/* ✅ Hover zoom & shadow */
+img:hover {
+  transform: scale(1.05);  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== BUTTONS ========== */
+button, .cta-btn {
+  display: inline-block;
+  background: #0077ff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+button:hover, .cta-btn:hover {
+  background: #005fd4;
+}
+
+/* ========== SECTIONS ========== */
 section {
-    padding: 60px 20px;
-    text-align: center;
+  padding: 50px 0;
+  text-align: center;
 }
 
-/* HERO SECTION */
-.hero {
-    background: #0A0F2C;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 50px;
-    flex-wrap: wrap;
-}
-
-.hero-content {
-    flex: 1;
-    min-width: 300px;
-}
-
-.hero-content h1 {
-    font-size: 2.8em;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    background: #007BFF;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #0056b3;
-}
-
-.hero-image {
-    flex: 1;
-    min-width: 250px;
-    text-align: center;
-}
-
-/* FEATURES SECTION */
-.features {
-    background: #fff;
-}
-
-.features h2 {
-    font-size: 2.2em;
-    margin-bottom: 30px;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.feature {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-5px);
-}
-
-.feature img {
-    width: 80px;
-    margin: 0 auto 10px;
-}
-
-/* HOW IT WORKS */
-.how-it-works {
-    background: #eef6ff;
-}
-
-.steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.step {
-    width: 250px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-/* EMERGENCY SECTION */
-.emergency {
-    background: #0A0F2C;
-    color: #fff;
-}
-
-.emergency img {
-    margin-top: 20px;
-    max-width: 350px;
-}
-
-/* DOWNLOAD SECTION */
-.download {
-    background: #ffffff;
-}
-
-.download h2 {
-    font-size: 2.4em;
-    margin-bottom: 15px;
-}
-
-.app-buttons img {
-    width: 150px;
-    margin: 10px;
-    display: inline-block;
-}
-
-/* FOOTER */
-footer {
-    background: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 0.9em;
-}
-
-/* Responsive Design */
-@media(max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
+/* Feature sections (optional if you want padding & spacing) */
+.feature-section {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
